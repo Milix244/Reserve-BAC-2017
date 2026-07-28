@@ -17,29 +17,68 @@ Berechnen Sie
 
 \subsection*{Lösung}
 Ansatz ist die partielle Integration \\
-Formel
+Formel:
 \[\int u'\cdot v\ dx=u\cdot v-\int u\cdot v'\ dx\]
-Wahl von u' und v (LIATE)
+Wahl von u' und v (LIATE):
 \[u'(x)=e^x\]
 \[v(x)=(x-2)\]
-Einsetzen
+Einsetzen:
 \[\int e^x\cdot (x-2)\ dx\]
-Wobei
+Wobei:
 \[u(x)=e^x\]
 \[v'(x)=1\]
-Daraus folgt
+Daraus folgt:
 \[=(e^x)\cdot (x-2)-\int e^x\cdot 1\ dx\]
 \[=(e^x)\cdot (x-2)-(e^x)\]
 \[=(e^x)\cdot ((x-2)-1)\]
 \[=(e^x)\cdot (x-3)\]
-C hinzufügen
+C hinzufügen:
 \[=(e^x)\cdot (x-3)+C,\ (C\in\mathbb{R})\]
 
 \section*{Aufgabe 2}
-Gegeben ist die Ebene \(\pi :2x-2y-z=0\).\\
+Gegeben ist die Ebene \(\pi :2x-2y-z=0\). \\
 Ermitteln Sie eine Koordinatengleichung für jede Ebene, die parallel zur
 Ebene \(\pi\) ist und von \(\pi\) den Abstand 5 besitzt.
 \subsection*{Lösung}
-
-
+Gegeben ist die Koordinatenform der Ebene. \\
+Gesucht sind zwei parallele Ebenen (die durch eine Gleichung beschrieben wird \(E_{parallel}\)) von Ebene \(\pi\) mit Abstand \(d=5\). \\
+Gegebene Formel (Punkt - Ebene, Zur Übersicht wird \(D\left(M,\pi \right)\) anstatt von \(d\left(M,\pi \right)\) verwendet):
+\[D\left(M,\pi \right)=\frac{\left|\overrightarrow{AM}\cdot \vec{n}\right|}{\left|\vec{n}\right|}=\frac{\left|ax_{M}+by_{M}+cz_{M}+d\right|}{\sqrt{a^{2}+b^{2}+c^{2}}}\]
+Umformung von \(\pi\):
+\[\pi :2x-2y-z=0\]
+Wobei:
+\[\vec{n}=\begin{pmatrix} 2 \\ -2 \\ -1 \end{pmatrix}\]
+Also:
+\[\pi :\begin{pmatrix} 2 \\ -2 \\ -1 \end{pmatrix}\cdot \left(\overrightarrow{X}-\overrightarrow{P_0}\right)=0\]
+\[\pi :\begin{pmatrix} 2 \\ -2 \\ -1 \end{pmatrix}\cdot\overrightarrow{X}-\begin{pmatrix} 2 \\ -2 \\ -1 \end{pmatrix}\cdot\overrightarrow{P_0}=0\]
+Wobei:
+\[\vec{n}\cdot\overrightarrow{P_0}=d\]
+und:
+\[d=0\]
+Erhält man:
+\[\pi :\begin{pmatrix} 2 \\ -2 \\ -1 \end{pmatrix}\cdot \overrightarrow{X}=0\]
+Da man in diesen Fall parallele Ebenen sucht, ist der Normalenvektor \(\vec{n}\) bei den gesuchten Ebenen wie bei Ebene \(\pi\) gleich. \\
+Die gesuchten Ebenen haben die Form:
+\[E_{\text{parallel}}: 2x-2y-z=d'\]
+wobei \(d'\) so bestimmt werden muss, dass der Abstand zwischen \(\pi\) und \(E_{\text{parallel}}\) gleich 5 ist (\(D\left(M,\pi \right)=5\)). \\
+Man leitet sich folgende Formel her (M ist ein Punkt auf der \(E_{parallel}\)):
+\[D\left(M,\pi \right)=\frac{\left|\overrightarrow{AM}\cdot \vec{n}\right|}{\left|\vec{n}\right|}\]
+\[=\frac{\left|\left(\overrightarrow{M}-\overrightarrow{A}\right)\cdot \vec{n}\right|}{\left|\vec{n}\right|}\]
+\[=\frac{\left|\overrightarrow{M}\cdot \vec{n}-\overrightarrow{A}\cdot \vec{n}\right|}{\left|\vec{n}\right|}\]
+Wobei:
+\[\overrightarrow{M}\cdot \vec{n}=d'\]
+\[\overrightarrow{A}\cdot \vec{n}=d\]
+Demnach:
+\[D\left(M,\pi \right)=\frac{\left|d'-d\right|}{\left|\vec{n}\right|}\]
+\[D\left(M,\pi \right)=\frac{\left|d'-d\right|}{\sqrt{x^2+y^2+z^2}}\]
+Mit der Formel:
+\[5=\frac{|d'-d|}{\sqrt{2^2+(-2)^2+(-1)^2}}\]
+\[5=\frac{|d'-0|}{\sqrt{4+4+1}}=\frac{|d'|}{3}\]
+\[5\cdot 3=|d'|\]
+\[15=|d'|\]
+Also \(d'=15\) oder \(d'=-15\). \\
+Die beiden parallelen Ebenen sind:
+\[E_{parallel}: 2x-2y-z=\pm 15\]
+Also:
+\[E_{1}: 2x-2y-z=15,\quad E_{2}: 2x-2y-z=-15\]
 \end{document}
